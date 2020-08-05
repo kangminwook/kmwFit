@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/jquery.easy-pie-chart/1.0.1/jquery.easy-pie-chart.js"></script>
     <script src="./assets/js/common.js"></script>
 </head>
-<body>
+<body style="height: 100vh;">
 
     <!-- userImg, moreBtn -->
     <div class="mainHeader">
@@ -39,9 +39,36 @@
                 </div>
             </div>
         </div>
-        <div class="moreBtnBox">
+
+        <div class="moreBtnBox" onclick="mainMoreBtnCss()">
             <img src="./assets/image/plus-solid.svg" alt="더 보기">
         </div>
+
+        <div class="moreBtn_list" onclick="mainMoreBtnCss_remove()">
+            <ul>
+                <li>
+                    <i class="far fa-edit"></i>
+                    <p>수동 기록</p>
+                </li>
+                <li>
+                    <i class="far fa-comment-dots"></i>
+                    <p>자주 묻는 질문</p>
+                </li>
+                <li>
+                    <i class="fas fa-share-alt"></i>
+                    <p>공유</p>
+                </li>
+                <li>
+                    <i class="fas fa-baby"></i>
+                    <p>유아 측정모드</p>
+                </li>
+                <li>
+                    <i class="fas fa-ruler-horizontal"></i>
+                    <p>스마트줄자 측정</p>
+                </li>
+            </ul>
+        </div>
+
     </div>
     <!-- userImg, moreBtn -->
 
@@ -60,7 +87,7 @@
         </div>
 
         <div class="userInbodyList">
-            <a href="">
+            <a href="./userDetail.html">
                 <h6>03:25 2020/01/01</h6>
                 <ul>
                     <li>

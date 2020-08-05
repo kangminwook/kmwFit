@@ -1,5 +1,7 @@
 
 
+
+// 메인 유저 이미지 클릭시 
 function mainUserClickMoreBtnCss()
 {
     $(".userMoreBox").addClass("show");
@@ -10,6 +12,16 @@ function mainUserClickMoreBtnCss_remove()
     $(".userMoreBox").removeClass("show");
 }
 
+// 메인 더보기 클릭시
+function mainMoreBtnCss()
+{
+    $(".moreBtn_list").addClass("show");
+}
+
+function mainMoreBtnCss_remove()
+{
+    $(".moreBtn_list").removeClass("show");
+}
 
 function userWeight()
 {
@@ -28,7 +40,7 @@ function userWeight()
           // Size of the pie chart in px. It will always be a square.
           size: 160,
           // Time in milliseconds for a eased animation of the bar growing, or false to deactivate.
-          animate: 1000,
+          animate: 2000,
           // Callback function that is called at the start of any animation (only if animate is not false).
           onStart: $.noop,
           // Callback function that is called at the end of any animation (only if animate is not false).
