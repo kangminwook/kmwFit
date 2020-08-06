@@ -23,6 +23,9 @@ function mainMoreBtnCss_remove()
     $(".moreBtn_list").removeClass("show");
 }
 
+
+
+// 메인페이지 회원 몸무게 목표
 function userWeight()
 {
     $(function() {
@@ -54,3 +57,54 @@ function userWeight()
         });
       });
 }
+
+
+
+// 사진 업로드
+var setPreview = function (opt){
+	var inputFile = opt.inputFile.get(0);
+	var img = opt.img.get(0);
+	// FileReader
+	if (window.FileReader) {
+	// image 파일만
+	if (!inputFile.files[0].type.match(/image\//)) return;
+	// preview
+	try {
+		var reader = new FileReader();
+		reader.onload = function(e){
+		img.src = e.target.result;
+		// img.style.width  = opt.w + 'px';
+		// img.style.height = opt.h + 'px';
+		img.style.display = '';
+		}
+		reader.readAsDataURL(inputFile.files[0]);
+	} catch (e) {
+	// exception...
+	}
+	// img.filters (MSIE)
+	} else if (img.filters) {
+	inputFile.select();
+	inputFile.blur();
+	var imgSrc = document.selection.createRange().text;
+
+	img.style.width  = opt.w + 'px';
+	img.style.height = opt.h + 'px';
+	img.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(enable='true',sizingMethod='scale',src=\""+imgSrc+"\")";
+	img.style.display = '';
+	// no support
+	} else {
+	// Safari5, ...
+	}
+}
+
+$(function(){
+	$('.img_upload').change(function(){
+		var opt = {
+			inputFile: $(this),
+			img: $($(this).attr('img_target')),
+			w: $($(this).attr('img_target')).width(),
+			h: $($(this).attr('img_target')).height()
+		};
+		setPreview(opt);
+	});
+});
