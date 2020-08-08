@@ -4,6 +4,37 @@ body{
 }
 
 
+
+/* userWeight */
+svg text {
+    font-size:1.2rem !important;
+}
+
+.userWeight h5{
+    text-align: center;
+    color:#777;
+    font-size:.95rem;
+    font-weight: 500;
+    margin-top:30px;
+}
+
+
+.userWeight > div {
+    text-align: center;
+}
+
+.userWeight > div label{
+    display: block;
+    margin-bottom:20px;
+    color:#777;
+}
+
+.userWeight .rangeSliderBox{
+    text-align: center;
+}
+
+
+
 /* myPage header */
 .myPageHeader{
     width:100%;
@@ -648,9 +679,8 @@ body{
     top:22%;
     transform:translateY(-50%) translateX(-50%);    
 }
-.userDetail .userWeight canvas{
-    position: absolute;
-}
+
+
 .userDetail .userWeight span{
     position: absolute;
     left:50%;
@@ -921,7 +951,7 @@ body{
     width: 96%;
 }
 
-
+ 
 
 /* userTheme */
 .userThemeUl {
