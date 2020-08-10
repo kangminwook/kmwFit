@@ -22,8 +22,9 @@
 >> 17. 체형
 
 <hr/>
-- 예시 이미지 파일입니다.
+- 예시 이미지 파일입니다.   
 
+![Fitdays스크린샷](https://user-images.githubusercontent.com/52237567/89751609-c685c480-db0b-11ea-82e7-d215e2c8935a.jpg)
 
 
 
