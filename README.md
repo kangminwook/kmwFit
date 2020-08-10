@@ -27,9 +27,10 @@
 ![Fitdays스크린샷](https://user-images.githubusercontent.com/52237567/89751609-c685c480-db0b-11ea-82e7-d215e2c8935a.jpg)
 
 
+---------------------------------------------------------------------
 
 
-![Fitdays스크린샷2](./assets/image/deviceIcon.jpg)
+![Fitdays스크린샷2](./assets/image/Fitdays스크린샷2.jpg)
 
 
 
