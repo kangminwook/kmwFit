@@ -1283,7 +1283,7 @@
                                     textAttrs = {};
                                 }
                                 textAttrs.x = pntX-8;
-                                textAttrs.y = pntY-20;
+                                textAttrs.y = pntY-10;
                                 value = $elem.triggerHandler('customLabel.rsSliderLens', [value]);
                                 $allText.append(util.createSvgDom('text', textAttrs).append(value));
                             },
