@@ -3,36 +3,255 @@ body{
     margin-bottom: 72px;
 }
 
+/* user Device */
+
+.deViceImgBox {
+    text-align: center;
+    padding:15px;
+    margin-bottom: 50px;
+}
+.deViceImgBox img{
+    width:100%;
+    max-width:100px;
+}
+
+
+.myDeviceDetail li{
+    display: flex;
+    padding:0 15px 25px;
+    margin-bottom:25px;
+    border-bottom: 1px solid #e3e3e3;;
+}
+
+.myDeviceDetail li div:nth-of-type(1){
+    width:30%;
+    color:#777;
+    text-align: center;
+    font-size:1rem;
+}
+
+.myDeviceDetail li div:nth-of-type(2){
+    flex:1;
+    font-size:1rem;
+}
+
+.myDeviceDetail li div:nth-of-type(3){
+    width:10%;
+    color:#777;
+    text-align: center;
+}
+
+.userDeviceDetailBtn{
+    position: absolute;
+    width:100%;
+    bottom:0;
+}
+
+.userDeviceDetailBtn button{
+display: block;
+    width: 90%;
+    margin: 25px auto;
+    padding: 10px 0;
+    color: #fff;
+    background: #d25a2c;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+
+
+.myDevice {
+    padding:15px;
+    background: #fff;
+}
+
+.myDevice li a{
+    display:flex;
+    align-items: center;
+}
+
+.myDevice li a div:nth-of-type(1){
+    width:20%;
+    max-width:75px;
+}
+
+.myDevice li a div:nth-of-type(1) img{
+    width:100%;
+}
+
+.myDevice li a div:nth-of-type(2){
+    padding-left:12px;
+    flex:1;
+}
+
+.myDevice li a div:nth-of-type(2) h6{
+    font-size:1.1rem;
+    margin-bottom:10px;
+}
+
+.myDevice li a div:nth-of-type(2) span{
+    color:#777;
+    font-size:.9rem;
+}
+
+.myDevice li a div:nth-of-type(3){
+    width:10%;
+    text-align: center;
+}
+
+.myDevice li a div:nth-of-type(3) i{
+    font-size:1.4rem;
+}
+
 
 
 /* userWeight */
 svg text {
-    font-size:1.2rem !important;
+    font-size:1rem !important;
 }
 
 .userWeight h5{
     text-align: center;
-    color:#777;
+    color:#333;
     font-size:.95rem;
     font-weight: 500;
-    margin-top:30px;
+    margin:30px 0;
+}
+
+.userWeight ul {
+    display: flex;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.userWeight ul:nth-of-type(2){
+    margin-top:15px;
+}
+
+.userWeight ul li{
+    width: 25%;
+    font-size: .85rem;
+    color:#444;
+}
+
+.userWeight ul li span {
+    position: relative;
+    display: block;
+    text-indent: -999px;
+    height:5px;
+}
+
+.userWeight ul li:nth-of-type(1) span{
+    background: #6fbbf9;
+}
+.userWeight ul li:nth-of-type(2) span{
+    background: #65db44;
+}
+.userWeight ul li:nth-of-type(3) span{
+    background: #f8d848;
+}
+.userWeight ul li:nth-of-type(4) span{
+    background: #f09235;
+}    
+
+.userWeight ul li b{
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #65db44;
+}
+
+.userWeight .rangeSliderBox{
+    position: relative;
+}
+.userWeight .rangeSliderBox .rangeFocus{
+    position: absolute;
+    left:50%;
+    top:6px;
+    width:3px;
+    height:20px;
+    background:#f09235;
+}
+
+.userWeight .rangeSliderBox .rangeFocus::before{
+    content: "";
+    position:absolute;
+    left:-5px;
+    top:-20px;
+    display: block;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #f09235 transparent;
+
+}
+
+.userWeight .rangeSliderBox .leftOpacityBox{
+    position: absolute;
+    top:-15px;
+    left:0;
+    width:70px;
+    height: 90px;
+    background:rgba(255,255,255,0.6);
+}
+
+.userWeight .rangeSliderBox .rightOpacityBox{
+    position: absolute;
+    top:-15px;
+    right:0;
+    width:70px;
+    height: 90px;
+    background:rgba(255,255,255,0.6);
 }
 
 
 .userWeight > div {
     text-align: center;
+    margin-top:55px;
+}
+
+.userWeight .inputRangeBox > div{
+    margin-bottom: 20px;
 }
 
 .userWeight > div label{
-    display: block;
     margin-bottom:20px;
-    color:#777;
+    color:#f09235;
+    font-size:1.35rem;
+    font-weight: 500;
 }
 
+.userWeight > div label + span{
+    color:#f09235;
+    margin-left:4px;
+    font-size:.9rem;
+}
 .userWeight .rangeSliderBox{
     text-align: center;
 }
 
+
+.userWeightBtn{
+    position: absolute;
+    width:100%;
+    bottom:0;
+}
+
+.userWeightBtn button{
+display: block;
+    width: 90%;
+    margin: 25px auto;
+    padding: 10px 0;
+    color: #fff;
+    background: #d25a2c;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
 
 
 /* myPage header */
@@ -293,7 +512,6 @@ svg text {
     margin-top:20px;
     left: 50%;
     transform: translateX(-50%);
-
 }
 
 .userinfoModifyBox .userRegistBox .customInputBox label:after {
@@ -358,7 +576,7 @@ svg text {
     top:3px;
     color:#fff;
     font-size:1.3rem;
-    padding:8px 12px;
+    padding:6px 12px;
 }
 
 .subHeader .pageTitle{
@@ -684,7 +902,7 @@ svg text {
 .userDetail .userWeight span{
     position: absolute;
     left:50%;
-    top:50%;
+    top:60%;
     transform:translateY(-50%) translateX(-50%);
     color:#fff;
     font-size:1.5rem;
@@ -897,7 +1115,7 @@ svg text {
     top: 3px;
     color: #fff;
     font-size: 1.3rem;
-    padding: 8px 12px;
+    padding: 6px 12px;
 }
 
 .subHeaderTpye2 .backBtn i {
@@ -1085,6 +1303,51 @@ svg text {
     flex: 1;
     color:#777;
     font-size:.9rem;
+}
+
+.userSettingUl li input[type=checkbox]{
+    height: 0;
+	width: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.userSettingUl li .customInputBox label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 70px;
+	height: 28px;
+	background: #bbb;
+	display: block;
+	border-radius: 100px;
+    position: relative;
+    left: -24%;
+    transform: translateX(-50%);
+}
+
+.userSettingUl .customInputBox label:after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.userSettingUl .customInputBox input:checked + label {
+	background: #d25a2c;
+}
+
+.userSettingUl .customInputBox input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.userSettingUl .customInputBox label:active:after {
+	width: 50px;
 }
 
 

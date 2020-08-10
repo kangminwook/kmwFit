@@ -398,7 +398,7 @@
                 },
                 init: function () {
                     var css = {
-                            display: 'inline-block',
+                            display: 'none',
                             overflow: 'hidden',
                             outline: 'none',
                             position: 'absolute'
@@ -1260,9 +1260,9 @@
                     if (opts.ruler.labels.visible &&
                             ((opts.ruler.labels.values === 'step' || opts.ruler.labels.values === true) && opts.step > 0 ||
                              opts.ruler.labels.values instanceof Array)) {
-                        var gAttrs = {
+                            var gAttrs = {
                                 'dominant-baseline': 'central',
-                                'text-anchor': 'middle'
+                                'text-anchor': 'top'
                             },
                             $allText,
                             range = opts.max - opts.min,
@@ -1282,8 +1282,8 @@
                                 if (Object.prototype.toString.call(textAttrs) !== '[object Object]') {
                                     textAttrs = {};
                                 }
-                                textAttrs.x = pntX;
-                                textAttrs.y = pntY;
+                                textAttrs.x = pntX-8;
+                                textAttrs.y = pntY-20;
                                 value = $elem.triggerHandler('customLabel.rsSliderLens', [value]);
                                 $allText.append(util.createSvgDom('text', textAttrs).append(value));
                             },
