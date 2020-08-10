@@ -29,3 +29,9 @@
 
 
 
+![Fitdays스크린샷2](./assets/image/deviceIcon.jpg)
+
+
+
+
+
